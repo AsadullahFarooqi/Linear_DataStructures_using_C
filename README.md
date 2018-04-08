@@ -1,5 +1,8 @@
 # Linked-List-with-C
-## Singly linked list, Circular Singly linked list, Doubly linked list, Circular Doubly linked list
+### Singly linked list,
+### Circular Singly linked list, 
+### Doubly linked list, 
+### Circular Doubly linked list
 
 these functions are avalible in my code 
 1. `length` function is for length of the list.
