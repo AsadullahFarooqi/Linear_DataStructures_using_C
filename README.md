@@ -1,9 +1,11 @@
-# Linked-List-with-C
+# Linear Data Structures uing Linked-List-with-C
 ### Singly linked list with C,
 ### Circular Singly linked list with C, 
 ### Doubly linked list with C, 
 ### Circular Doubly linked list with C.
-
+--------------
+### Stack with C.
+### Queue with C.
 these functions are avalible in my code 
 1. `length` function is for length of the list.
 2. `print_list_normally_with_recur` function for display list normally with recursion.
