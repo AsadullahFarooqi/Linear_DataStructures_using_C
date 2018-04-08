@@ -19,13 +19,20 @@ Below functions are available for above ones
 10. `del_by_val` to delete item by value.
 11. `del_by_key` to delete item by key.
 12. `reverse` to reverse list.
-
 --------------
 ### Stack with C.
+Below fu
 1. `height` for height of stack.
 2. `print_stack` to display the stack.
 3. `peak` to return the topmost element of the stack.
 4. `push` to add the element at the topmost of the stack.
 5. `pop` to remove the topmost element form the stack.
+--------------
 ### Queue with C.
+1. `length` for height of stack.
+2. `print_queue` to display the stack.
+3. `front` to return the most first entered element in Queue.
+4. `back` to return the most last entered element in Queue.
+5. `enqueue` to add an element at the tail of Queue.
+6. `dequeue` to remove the most first entered element in Queue.
 --------------
