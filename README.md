@@ -1,12 +1,12 @@
 # Linear Data Structures uing Linked-List-with-C
+--------------
 ### Singly linked list with C,
 ### Circular Singly linked list with C, 
 ### Doubly linked list with C, 
 ### Circular Doubly linked list with C.
 --------------
-### Stack with C.
-### Queue with C.
-these functions are avalible in my code 
+Below functions are available for above ones
+
 1. `length` function is for length of the list.
 2. `print_list_normally_with_recur` function for display list normally with recursion.
 3. `print_list_reversly_with_recur` function for only display list reversly with recursion.
@@ -19,3 +19,13 @@ these functions are avalible in my code
 10. `del_by_val` to delete item by value.
 11. `del_by_key` to delete item by key.
 12. `reverse` to reverse list.
+
+--------------
+### Stack with C.
+1. `height` for height of stack.
+2. `print_stack` to display the stack.
+3. `peak` to return the topmost element of the stack.
+4. `push` to add the element at the topmost of the stack.
+5. `pop` to remove the topmost element form the stack.
+### Queue with C.
+--------------
