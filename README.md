@@ -21,7 +21,6 @@ Below functions are available for above ones
 12. `reverse` to reverse list.
 --------------
 ### Stack with C.
-Below fu
 1. `height` for height of stack.
 2. `print_stack` to display the stack.
 3. `peak` to return the topmost element of the stack.
