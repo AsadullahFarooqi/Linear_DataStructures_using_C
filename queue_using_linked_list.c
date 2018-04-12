@@ -3,7 +3,7 @@
 
 struct queue_node{
 	int data;
-	struct queue_node* rightside_item_link;
+	struct queue_node* next_item_link;
 };
 
 struct queue_node *head = NULL;
@@ -17,17 +17,17 @@ int length_of_queue(){
 		return 0;
 
 	}
-	else if (head -> rightside_item_link == NULL){
+	else if (head -> next_item_link == NULL){
 		return 1;
 	}
 	else {
 
 		struct queue_node *ptr = head;
 
-		while (ptr -> rightside_item_link != NULL){
-			ptr = ptr -> rightside_item_link;
+		while (ptr -> next_item_link != NULL){
+			ptr = ptr -> next_item_link;
 			counter++;
-			if (ptr -> rightside_item_link == NULL){
+			if (ptr -> next_item_link == NULL){
 				counter++;
 			}
 		}
@@ -43,10 +43,10 @@ void print_queue(){
 
 	struct queue_node *ptr = head;
 
-	while(ptr -> rightside_item_link != NULL){
+	while(ptr -> next_item_link != NULL){
 		printf("%d, ", ptr -> data);
-		ptr = ptr -> rightside_item_link;
-		if (ptr -> rightside_item_link == NULL){
+		ptr = ptr -> next_item_link;
+		if (ptr -> next_item_link == NULL){
 			printf("%d, ", ptr -> data);
 			break;
 		}
@@ -71,14 +71,14 @@ int front(){
 	if (head == NULL) {
 		printf("queue is empty!");
 		return 0;
-	}else if (head -> rightside_item_link == NULL){
+	}else if (head -> next_item_link == NULL){
 		return head -> data;
 	}else{
 		struct queue_node *ptr;
 		ptr = head;
 
-		while(ptr -> rightside_item_link != NULL){
-			ptr = ptr -> rightside_item_link;
+		while(ptr -> next_item_link != NULL){
+			ptr = ptr -> next_item_link;
 		}
 		return ptr -> data;	
 	}
@@ -97,13 +97,13 @@ void enqueue(int item){
 	
 	if (head == NULL) {
 
-		new_node -> rightside_item_link = NULL;
+		new_node -> next_item_link = NULL;
 		head = new_node;
 		printf("%d is added at the begining of the queue! \n", item);
 	
 	} else{
 		
-		new_node -> rightside_item_link = head;
+		new_node -> next_item_link = head;
 		printf("%d is added at the begining of the queue! \n", item);
 		head = new_node;
 
@@ -118,12 +118,12 @@ void dequeue(){
 	struct queue_node *ptr, *prev_node_to_null;
 	ptr = head;
 
-	while(ptr -> rightside_item_link != NULL){
+	while(ptr -> next_item_link != NULL){
 		prev_node_to_null = ptr;
-		ptr = ptr -> rightside_item_link;
+		ptr = ptr -> next_item_link;
 	}
 
-	prev_node_to_null -> rightside_item_link = NULL;
+	prev_node_to_null -> next_item_link = NULL;
 	printf("%d is deleted from the begining of the list\n", ptr -> data);
 	free(ptr);
 }
